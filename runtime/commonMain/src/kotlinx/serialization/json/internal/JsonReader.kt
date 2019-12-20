@@ -135,7 +135,7 @@ internal class JsonReader(private val source: String) {
     }
 
     internal inline fun requireTokenClass(expected: Byte, errorMessage: (Char) -> String) {
-        if (tokenClass != expected) fail(errorMessage(tokenClass.toChar()), tokenPosition)
+//        if (tokenClass != expected) fail(errorMessage(tokenClass.toChar()), tokenPosition)
     }
 
     fun takeString(): String {
